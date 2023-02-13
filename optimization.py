@@ -23,6 +23,15 @@ def plot_gain(gain_his):
     plt.figure(figsize=(15, 8), dpi=200)
     rolling_intv = 20
     # The minimum number of data required in the window is 1
+    # test = df.rolling(rolling_intv, min_periods=1).mean()
+    # print(test)
+    # test1 = df.rolling(rolling_intv, min_periods=1).min()['gain']
+    # print(test1)
+    # test2 = df.rolling(rolling_intv, min_periods=1).max()['gain']
+    # print(test2)
+    # x = np.arange(len(gain_array)) + 1
+    # print(x)
+    # plt.plot(x, test)
     plt.plot(np.arange(len(gain_array)) + 1, df.rolling(rolling_intv, min_periods=1).mean(), 'b')
     plt.fill_between(np.arange(len(gain_array)) + 1, df.rolling(rolling_intv, min_periods=1).min()['gain'],
                      df.rolling(rolling_intv, min_periods=1).max()['gain'], color='b', alpha=0.2)

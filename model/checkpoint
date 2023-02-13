@@ -1,0 +1,2 @@
+model_checkpoint_path: "F:\\collect\\RL-for-binary-computation-offloading-in-wireless-powered-MEC-networks\\model\\DROO-model@frame30000"
+all_model_checkpoint_paths: "F:\\collect\\RL-for-binary-computation-offloading-in-wireless-powered-MEC-networks\\model\\DROO-model@frame30000"
